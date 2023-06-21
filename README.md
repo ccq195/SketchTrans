@@ -1,7 +1,7 @@
 This project is our implementation of "Sketch Transformer: Asymmetrical Disentanglement Learning from Dynamic Synthesis" (ACM MM22) and the extension that is submitted to PAMI.
  
  # 1. Prepare Datasets
- (1) Category-level datasets: ![link](https://github.com/huangzongheng/MATHM) 
+ (1) Category-level datasets: [link](https://github.com/huangzongheng/MATHM) 
 
  (2)Instance-level Datasets: PKU-Sketch dataset: https://www.pkuml.org/resources/pkusketchreid-dataset.html;
  QMUL: https://sketchx.eecs.qmul.ac.uk/downloads/
@@ -13,7 +13,7 @@ This project is our implementation of "Sketch Transformer: Asymmetrical Disentan
 
 # 3. Trained Models
 
-  Our trained models can be downloaded from ![baidu netdisk]() (the extraction code is go78).
+  Our trained models can be downloaded from [baidu netdisk](https://pan.baidu.com/s/1eoMDwZSam3d6Pq9kIjNt8A) (the extraction code is wzj8).
 
 # 4. Citation
 @inproceedings{chen2022sketch,
