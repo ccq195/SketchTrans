@@ -1,0 +1,64 @@
+MODEL:
+  PRETRAIN_CHOICE: 'imagenet'
+  PRETRAIN_PATH: '/data1/ccq/TransReID-main-31_3_copy3/pretrained_models/jx_vit_base_p16_224-80ecf9dd.pth'
+  METRIC_LOSS_TYPE: 'triplet'
+  IF_LABELSMOOTH: 'off'
+  IF_WITH_CENTER: 'no'
+  NAME: 'transformer'
+  NO_MARGIN: True
+  DEVICE_ID: ('6')
+  TRANSFORMER_TYPE: 'vit_base_patch16_224_TransReID'
+  STRIDE_SIZE: [16, 16]
+  AUX: False
+  SIE_COE: 3.0
+  SIE_VIEW: False
+  VIEW: 0
+  W: 0.0
+  G: 0.0
+  R: 0.0
+
+INPUT:
+  SIZE_TRAIN: [256, 128]
+  SIZE_TEST: [256, 128]
+  PROB: 0.5 # random horizontal flip
+  RE_PROB: 0.5 # random erasing
+  PADDING: 10
+  PIXEL_MEAN: [0.5, 0.5, 0.5]
+  PIXEL_STD: [0.5, 0.5, 0.5]
+
+DATASETS:
+  NAMES: ('pku')
+  ROOT_DIR: ('/data0/data_ccq/PKUSketchRE-ID_V1/')
+  TRIAL: 1
+
+DATALOADER:
+  SAMPLER: 'softmax_triplet'
+  NUM_INSTANCE: 3
+  NUM_WORKERS: 4
+
+SOLVER:
+  OPTIMIZER_NAME: 'SGD'
+  MAX_EPOCHS: 100
+  BASE_LR: 0.008
+  IMS_PER_BATCH: 16
+  WARMUP_METHOD: 'linear'
+  LARGE_FC_LR: False
+  CHECKPOINT_PERIOD: 100
+  LOG_PERIOD: 50
+  EVAL_PERIOD: 2
+  WEIGHT_DECAY:  1e-4
+  WEIGHT_DECAY_BIAS: 1e-4
+  BIAS_LR_FACTOR: 2
+
+TEST:
+  EVAL: True
+  IMS_PER_BATCH: 50
+  RE_RANKING: False
+  WEIGHT: 'transformer_best.pth'
+  NECK_FEAT: 'before'
+  FEAT_NORM: 'yes'
+  RESUME: '../'
+
+OUTPUT_DIR: '../'
+
+
