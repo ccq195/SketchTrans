@@ -1,11 +1,12 @@
 This project is our implementation of "Sketch Transformer: Asymmetrical Disentanglement Learning from Dynamic Synthesis" (ACM MM22) and the extension that is submitted to PAMI.
+ 
  # 1. Prepare Datasets
  (1) Category-level datasets: ![link](https://github.com/huangzongheng/MATHM) 
 
  (2)Instance-level Datasets: PKU-Sketch dataset: https://www.pkuml.org/resources/pkusketchreid-dataset.html;
  QMUL: https://sketchx.eecs.qmul.ac.uk/downloads/
 
- # 2. Train and Test Instruction
+ # 2. Running Train and Test
   (1) Train and Test for category-level sketch-photo recognition: sh ./category_dist_train.sh;
   
   (2)Train and Test for instance-level sketch-photo recognition: sh ./instance_dist_train.sh.
