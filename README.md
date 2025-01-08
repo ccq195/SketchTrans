@@ -1,4 +1,4 @@
-This project is our implementation of "Sketch Transformer: Asymmetrical Disentanglement Learning from Dynamic Synthesis" (ACM MM22) and the extension that is submitted to PAMI.
+This project is our implementation of "Sketch Transformer: Asymmetrical Disentanglement Learning from Dynamic Synthesis" (ACM MM2022) and the extension of "SketchTrans: Disentangled Prototype Learning With Transformer for Sketch-Photo Recognition" (TPAMI2024).
  
  # 1. Prepare Datasets
  (1) Category-level datasets: [link](https://github.com/huangzongheng/MATHM) 
