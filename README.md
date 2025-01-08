@@ -23,9 +23,8 @@ This project is our implementation of "Sketch Transformer: Asymmetrical Disentan
   year={2024},
   volume={46},
   number={5},
-  pages={2950-2964},
-  keywords={Prototypes;Transformers;Image retrieval;Learning systems;Task analysis;Semantics;Optimization;Asymmetric disentanglement;dynamic synthesis;prototype learning;sketch-photo;recognition},
-  doi={10.1109/TPAMI.2023.3337005}}
+  pages={2950-2964}
+  }
   
 @inproceedings{chen2022sketch,
   title={Sketch transformer: Asymmetrical disentanglement learning from dynamic synthesis},
