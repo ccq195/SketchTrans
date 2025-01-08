@@ -13,7 +13,7 @@ This project is our implementation of "Sketch Transformer: Asymmetrical Disentan
 
 # 3. Trained Models
 
-  Our trained models can be downloaded from [baidu netdisk](https://pan.baidu.com/s/1eoMDwZSam3d6Pq9kIjNt8A) (the extraction code is wzj8).
+  Our trained models and the pretrained weights of the generator G can be downloaded from [baidu netdisk](https://pan.baidu.com/s/1ZCdvq5xBA2hEBG_UfxuJSg) (the extraction code is d28h).
 
 # 4. Citation
 @inproceedings{chen2022sketch,
